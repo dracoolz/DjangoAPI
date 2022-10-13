@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from base.models import buses, buses_user, users
 from .serializers import busesSerializer,busesUserSerializer, userSerializer
+from django.http.response import JsonResponse
 
 # GET
 #buses
@@ -51,3 +52,12 @@ def addItem_user(request):
     if serializer_user.is_valid():
         serializer_user.save()
     return Response(serializer_user.data)
+
+#############################
+#DELETE
+#buses-user
+@api_view(['DELETE'])
+def Delete_buses_user(request):
+    delete_buses_user = buses_user.objects.get(pk=4)
+    delete_buses_user.delete()
+    return JsonResponse({'message': 'deleted successfully!'})
