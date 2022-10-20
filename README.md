@@ -10,7 +10,7 @@ python manage.py runserver 8080
 ```
 Open the URL http://localhost:8080/ to access the application.
 
-How it works? Using Postman.
+How it works? Using [Postman](https://www.postman.com/downloads/).
 Router for url will be look like this :
 1. POST
    - POST /users : Create a new Tutorial
