@@ -16,7 +16,7 @@ def user_list(request):
         
         title = request.query_params.get('title', None)
         if title is not None:
-            users = Users.filter(title__icontains=title)
+            users = users.filter(title__icontains=title)
         
         user_serializer = UserSerializer(users, many=True)
         return JsonResponse(user_serializer.data, safe=False)
