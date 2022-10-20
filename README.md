@@ -18,7 +18,6 @@ Router for url will be look like this :
 2. GET
    -  api/users : Retrieve all users
    -  api/users/:id : Retrieve a single user by id
-   -  api/users?title=res : Find all user which title contains ‘res’
    -  api/users/published : Find all published users
 
 3. PUT
