@@ -13,17 +13,17 @@ Open the URL http://localhost:8080/ to access the application.
 How it works? Using [Postman](https://www.postman.com/downloads/).
 Router for url will be look like this :
 1. POST
-   - POST /users : Create a new Tutorial
+   - /users : Create a new Tutorial
 
 2. GET
-   - GET /users : Retrieve all Tutorials
-   - GET /users/:id : Retrieve a single Tutorial by id
-   - GET /users?title=res : Find all Tutorials which title contains ‘res’
-   - GET /users/published : Find all published Tutorials
+   -  /users : Retrieve all Tutorials
+   -  /users/:id : Retrieve a single Tutorial by id
+   -  /users?title=res : Find all Tutorials which title contains ‘res’
+   -  /users/published : Find all published Tutorials
 
 3. PUT
-   - PUT /users/:id Api: Update a Tutorial
+   -  /users/:id Api: Update a Tutorial
 
 4. DELETE
-   - DELETE /users/:id : Delete a Tutorial
-   - DELETE /users : Delete all Tutorials 
+   -  /users/:id : Delete a Tutorial
+   -  /users : Delete all Tutorials 
