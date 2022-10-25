@@ -27,15 +27,21 @@ Router for url will be look like this :
    
 3. PUT
    -  api/users/:id Api: Update a user
-   1. ![image](https://user-images.githubusercontent.com/82569123/197674893-a05f80a4-2124-4a1a-8444-8f06634ea0d4.png)
-   2. ![image](https://user-images.githubusercontent.com/82569123/197674999-465a3ad1-d555-484d-a539-6b047b21f479.png)
+   1. 
+   ![image](https://user-images.githubusercontent.com/82569123/197674893-a05f80a4-2124-4a1a-8444-8f06634ea0d4.png)
+   2. 
+   ![image](https://user-images.githubusercontent.com/82569123/197674999-465a3ad1-d555-484d-a539-6b047b21f479.png)
 
 
 4. DELETE
    -  api/users/:id : Delete a user
-   1. ![image](https://user-images.githubusercontent.com/82569123/197675157-372e8727-e3af-44ca-b50d-98ef74fcc4a8.png)
-   2. ![image](https://user-images.githubusercontent.com/82569123/197675262-f604466b-135b-4ba8-b66b-06d1b92de172.png)
+   1. 
+   ![image](https://user-images.githubusercontent.com/82569123/197675157-372e8727-e3af-44ca-b50d-98ef74fcc4a8.png)
+   2. 
+   ![image](https://user-images.githubusercontent.com/82569123/197675262-f604466b-135b-4ba8-b66b-06d1b92de172.png)
 
    -  api/users : Delete all users 
-   1. ![image](https://user-images.githubusercontent.com/82569123/197675339-9b16e9c1-965c-47ea-b4c0-43af20ac64ce.png)
-   2. ![image](https://user-images.githubusercontent.com/82569123/197675396-26062cda-fac3-4880-8f44-a87e03d8b72d.png)
+   1. 
+   ![image](https://user-images.githubusercontent.com/82569123/197675339-9b16e9c1-965c-47ea-b4c0-43af20ac64ce.png)
+   2. 
+   ![image](https://user-images.githubusercontent.com/82569123/197675396-26062cda-fac3-4880-8f44-a87e03d8b72d.png)
