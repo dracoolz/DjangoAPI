@@ -14,6 +14,8 @@ How it works? Using [Postman](https://www.postman.com/downloads/).
 Router for url will be look like this :
 1. POST
    - api/users : Create a new User
+   ![image](https://user-images.githubusercontent.com/82569123/197674215-33be95c8-f40c-4966-9ebe-6076eebd0cae.png)
+
 
 2. GET
    -  api/users : Retrieve all users
