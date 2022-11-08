@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     # User application 
     'users.apps.UsersConfig',
+    #Group application
+    'groups.apps.GroupsConfig',
     # CORS
     'corsheaders',
 ]
