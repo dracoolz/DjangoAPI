@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'groups.apps.GroupsConfig',
     'buses.apps.BusesConfig',
+    'operation.apps.OperationConfig',
     # Django REST framework 
     'rest_framework',
     # CORS
