@@ -37,12 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # applications 
+    'users.apps.UsersConfig',
+    'groups.apps.GroupsConfig',
+    'buses.apps.BusesConfig',
     # Django REST framework 
     'rest_framework',
-    # User application 
-    'users.apps.UsersConfig',
-    #Group application
-    'groups.apps.GroupsConfig',
     # CORS
     'corsheaders',
 ]
