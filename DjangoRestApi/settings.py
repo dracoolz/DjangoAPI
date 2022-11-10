@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'groups.apps.GroupsConfig',
     'buses.apps.BusesConfig',
     'operation.apps.OperationConfig',
+    'passenger.apps.PassengerConfig',
     'family.apps.FamilyConfig',
     # Django REST framework 
     'rest_framework',
