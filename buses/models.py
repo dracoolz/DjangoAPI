@@ -3,5 +3,5 @@ from django.db import models
 from groups.models import Groups
 class Buses(models.Model):
     name = models.CharField(max_length=70, blank=False, unique=True)
-    group_id = models.ForeignKey(Groups, on_delete=models.CASCADE)
+    group_id = models.ForeignKey(Groups, on_delete=models.CASCADE, blank=True, null=True, default=None)
     created = models.DateTimeField(auto_now_add=True)

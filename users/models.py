@@ -8,6 +8,6 @@ class Users(models.Model):
     email = models.CharField(max_length=200, blank=False, unique=True)
     password = forms.CharField(max_length=200, widget=forms.PasswordInput)
     driver = models.BooleanField(blank=True, null=True)
-    group_id = models.ForeignKey(Groups, on_delete=models.CASCADE)
-    family_id = models.ForeignKey(Family, on_delete=models.CASCADE)
+    group_id = models.ForeignKey(Groups, on_delete=models.CASCADE, blank=True, null=True, default=None)
+    family_id = models.ForeignKey(Family, on_delete=models.CASCADE, blank=True, null=True, default=None)
     created = models.DateTimeField(auto_now_add=True)
