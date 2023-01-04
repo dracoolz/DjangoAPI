@@ -4,9 +4,10 @@ from groups.serializers import GroupSerializer
  
  
 class BusSerializer(serializers.ModelSerializer):
+    # retrieve data from relation
+    # group_id = GroupSerializer()
+
     class Meta:
         model = Buses
         fields = '__all__'
     
-    # retrieve data from relation
-    group_id = GroupSerializer()
