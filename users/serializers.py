@@ -7,13 +7,13 @@ from family.serializers import FamilySerializer
 
  
 class UserSerializer(serializers.ModelSerializer):
-    # # Group
-    # group = GroupSerializer(read_only=True)
-    # group_id = serializers.PrimaryKeyRelatedField(queryset=Groups.objects.all(), write_only=True)
+    # Group
+    group = serializers.PrimaryKeyRelatedField(queryset=Groups.objects.all(), source="group_id", write_only=True)
+    group_id = GroupSerializer(read_only=True)
     
-    # # Family
-    # family = FamilySerializer(read_only=True)
-    # family_id = serializers.PrimaryKeyRelatedField(queryset=Family.objects.all(), write_only=True)
+    # Family
+    family = serializers.PrimaryKeyRelatedField(queryset=Family.objects.all(), source="family_id", write_only=True)
+    family_id = FamilySerializer(read_only=True)
 
     class Meta:
         model = Users
