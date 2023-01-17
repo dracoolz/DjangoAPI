@@ -66,4 +66,3 @@ def user_list_published(request):
     if request.method == 'GET': 
         user_serializer = UserSerializer(user, many=True)
         return JsonResponse(user_serializer.data, safe=False)
-    
