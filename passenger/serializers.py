@@ -7,12 +7,12 @@ from users.serializers import UserSerializer
  
 class PassengerSerializer(serializers.ModelSerializer):
     # Operation
-    operation = serializers.PrimaryKeyRelatedField(queryset=Operation.objects.all(), source="operation_id", write_only=True)
-    operation_id = OperationSerializer(read_only=True)
+    operation_id = serializers.PrimaryKeyRelatedField(queryset=Operation.objects.all(), source="operation", write_only=True)
+    operation = OperationSerializer(read_only=True)
     
     # Users
-    user = serializers.PrimaryKeyRelatedField(queryset=Users.objects.all(), source="user_id", write_only=True)
-    user_id = UserSerializer(read_only=True)
+    user_id = serializers.PrimaryKeyRelatedField(queryset=Users.objects.all(), source="user", write_only=True)
+    user = UserSerializer(read_only=True)
     
     class Meta:
         model = Passenger
