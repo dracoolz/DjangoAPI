@@ -5,7 +5,7 @@ from buses.serializers import BusSerializer
  
 class GroupSerializer(serializers.ModelSerializer):
     # Bus
-    bus_id = serializers.PrimaryKeyRelatedField(queryset=Buses.objects.all(), source="bus", allow_null=True, write_only=True)
+    bus_id = serializers.PrimaryKeyRelatedField(queryset=Buses.objects.all(), source="bus", allow_null=True, write_only=True, many=True)
     bus = BusSerializer(read_only=True)
     
     class Meta:
