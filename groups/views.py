@@ -66,4 +66,35 @@ def group_list_published(request):
     if request.method == 'GET': 
         group_serializer = GroupSerializer(group, many=True)
         return JsonResponse(group_serializer.data, safe=False)
+
+# @api_view(['GET', 'POST', 'DELETE'])
+# def group_list_present(request):
+#     if request.method == 'GET':
+#         groups = Groups.objects.all()
+        
+#         title = request.query_params.get('title', None)
+#         if title is not None:
+#             groups = groups.filter(title__icontains=title)
+        
+#         group_serializer = GroupSerializer(groups, many=True)
+#         return JsonResponse(group_serializer.data, safe=False)
+#         # 'safe=False' for objects serialization
+ 
+#     elif request.method == 'POST':
+#         try:
+#             group_data = JSONParser().parse(request)
+#             bus_ids = group_data['bus_ids']
+#             groups = Groups.objects.filter(id_in=bus_ids)
+#             for group in groups:
+#                 group.name = group_data['name']
+#                 group.save()
+#             return JsonResponse(group_serializer.data, status=status.HTTP_201_CREATED) 
+#         except:
+#             return JsonResponse(group_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+#     elif request.method == 'DELETE':
+#         count = Groups.objects.all().delete()
+#         return JsonResponse({'message': '{} Users were deleted successfully!'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
+ 
+ 
     
