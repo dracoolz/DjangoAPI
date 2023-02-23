@@ -5,4 +5,5 @@ class Operation(models.Model):
     start = models.BooleanField(blank=False)
     end = models.BooleanField(blank=False)
     bus = models.ForeignKey(Buses, on_delete=models.CASCADE, blank=True, null=True, default=None)
+    attendance = models.PositiveIntegerField(blank=True, null=True, default=None)
     created = models.DateTimeField(auto_now_add=True)
